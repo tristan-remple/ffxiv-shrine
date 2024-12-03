@@ -83,7 +83,7 @@ const CharacterPage = () => {
     return (
         chara ? <main className={ name.replace("'", "") } >
             <article>
-                <div className="title shape bordered box"><h1>{ util.str.title(chara.firstName) } { util.str.title(chara.lastName) }</h1></div>
+                <div className="title shape bordered box"><h1>{ util.str.title(chara.firstName) } { util.str.title(chara.stageName) }</h1></div>
                 <div className="row wide">
                     <div className="half-col">
                         <img className="full-portrait bordered-img" src={ `/media/screens/xiv/icons/${ chara.firstName }.png` } alt={ `An icon-scropped screencap of ${ chara.firstName }.` } />

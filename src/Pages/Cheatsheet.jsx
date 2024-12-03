@@ -35,13 +35,13 @@ const Cheatsheet = () => {
                 return (
                     <Link className="card" to={ `/${ chara.firstName }` } >
                         <img className="portrait bordered-img" src={ `/media/screens/xiv/icons/${ chara.firstName }.png` } />
-                        <div className="shape bordered box under-portrait"><h3>{ util.str.title(chara.firstName) } { util.str.title(chara.lastName) }</h3></div>
+                        <div className="shape bordered box under-portrait"><h3>{ util.str.title(chara.firstName) } { util.str.title(chara.stageName) }</h3></div>
                     </Link>
                 )
             })
             return (
                 <div className="row wide bordered transbox world">
-                    {/* <div className="shape bordered box world-title"><h2>{ util.str.title(world) }</h2></div> */}
+                    <div className="shape bordered box world-title"><h2>{ util.str.title(world) }</h2></div>
                     { worldCharacters }
                 </div>
             )

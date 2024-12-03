@@ -22,7 +22,7 @@ const Home = () => {
         return (
             <Link className="card" to={ `/${ chara.firstName }` } >
                 <img className="portrait bordered-img" src={ `/media/screens/xiv/icons/${ chara.firstName }.png` } />
-                <div className="shape bordered box under-portrait"><h3>{ util.str.title(chara.firstName) } { util.str.title(chara.lastName) }</h3></div>
+                <div className="shape bordered box under-portrait"><h3>{ util.str.title(chara.firstName) } { util.str.title(chara.stageName) }</h3></div>
             </Link>
         )
     })

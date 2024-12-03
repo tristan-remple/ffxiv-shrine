@@ -17,7 +17,7 @@ const Error = ({ err }) => {
     }
 
     return (
-        <main id="main">
+        <main className="main">
             <article>
                 <div className="title shape bordered box"><h1>Error</h1></div>
                 <div className="wide bordered box">
